@@ -28,19 +28,19 @@ if (isNaN(lunchAmountInt) == true || lunchAmountInt < 0 || lunchAmountInt > 3) {
   // process
   switch (lunchTypeString) {
   case `sub`:
-      totalCookTime = (subCookTime / 2) + ((subCookTime / 2) * lunchAmountInt)
+    totalCookTime = (subCookTime / 2) + ((subCookTime / 2) * lunchAmountInt)
     break
   case `pizza`:
-      totalCookTime = (pizzaCookTime / 2) + ((pizzaCookTime / 2) * lunchAmountInt)
-      cookTimeSeconds = totalCookTime % 60
-      cookTimeMinutes = Math.floor(totalCookTime / 60)
-      console.log(`Total cook time:\n${cookTimeMinutes} minutes, ${cookTimeSeconds} seconds.`)
+    totalCookTime = (pizzaCookTime / 2) + ((pizzaCookTime / 2) * lunchAmountInt)
+    cookTimeSeconds = totalCookTime % 60
+    cookTimeMinutes = Math.floor(totalCookTime / 60)
+    console.log(`Total cook time:\n${cookTimeMinutes} minutes, ${cookTimeSeconds} seconds.`)
     break
   case `soup`:
-      totalCookTime = (soupCookTime / 2) + ((soupCookTime / 2) * lunchAmountInt)
-      cookTimeSeconds = totalCookTime % 60
-      cookTimeMinutes = Math.floor(totalCookTime / 60)
-      console.log(`Total cook time:\n${cookTimeMinutes} minutes, ${cookTimeSeconds} seconds.`)
+    totalCookTime = (soupCookTime / 2) + ((soupCookTime / 2) * lunchAmountInt)
+    cookTimeSeconds = totalCookTime % 60
+    cookTimeMinutes = Math.floor(totalCookTime / 60)
+    console.log(`Total cook time:\n${cookTimeMinutes} minutes, ${cookTimeSeconds} seconds.`)
     break
   default:
     console.log("Invalid")
