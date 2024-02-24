@@ -48,8 +48,8 @@ if (isNaN(lunchAmountInt) == true || lunchAmountInt < 0 || lunchAmountInt > 3) {
     break
   }
   if (validInput) {
-    cookTimeSeconds = totalCookTime % 60
-    cookTimeMinutes = Math.floor(totalCookTime / 60)
+    const cookTimeSeconds = totalCookTime % 60
+    const cookTimeMinutes = Math.floor(totalCookTime / 60)
     console.log(`Total cook time:\n${cookTimeMinutes} minutes, ${cookTimeSeconds} seconds.`)
   }
 }
