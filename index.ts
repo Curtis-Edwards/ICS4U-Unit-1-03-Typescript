@@ -37,7 +37,7 @@ if (isNaN(lunchAmountInt) == true || lunchAmountInt < 0 || lunchAmountInt > 3) {
     totalCookTime = (soupCookTime / 2) + ((soupCookTime / 2) * lunchAmountInt)
     break
   default:
-    console.log("Invalid")
+    console.log("Invalid input")
     validInput = false
     break
   }
